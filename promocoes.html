@@ -8,27 +8,41 @@
     <meta name="keywords" content="games, xbox, Nintendo, jogos, video games, Playstation, PS, Atari, PS4, PS5, PS3">
     <meta name="author" content="Patricia Muraoka">
     <meta name="viewport" content="Width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="boostrap-5.0.2-dist/css/boostrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
+
     
-    <figure class="img">
-      <img src="img/logo.png"> </img>
-    </figure>
-         
-    <nav id="Menu">
-     <a href="index.html">HOME</a>
-     <a href="games.html">GAMES</a>   
-     <a href="promocoes.html">PROMOÇÕES</a>
-     <a href="carrinho.html">CARRINHO</a>
-     <a href="contato.html">CONTATO</a>
-    </nav>
-    
+    <div class="imagens">
+        <figure class="img">
+            <img src="img/logo.png"> 
+        </figure>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="menu()">GAMES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="playstation.html"></a>PLAYSTATION</a>
+                <a href="xbox.html">XBOX</a>
+                <a href="pc.html">PC</a>
+            </div>
+        </div>
+        <a href="promocoes.html">PROMOÇÕES</a>
+        <a href="carrinho.html">CARRINHO</a>
+        <a href="contato.html">CONTATO</a>
+    </div>     
 
 
+
+ <div class="corpo">
     <h2>
         PROMOÇÕES
     </h2>
@@ -36,10 +50,14 @@
     <figure>
      <img class="figuras" src="img/promocao.jpg"> </img>
     </figure>
+
+ </div>   
     
 
 
 </body>
+
+<script type="text/javascript" src="js/scripts.js"></script> 
 
 <footer>
     Boom Games Eireli ME / CNPJ: 22.270.464/0001-50
