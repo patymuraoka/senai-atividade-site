@@ -8,9 +8,19 @@
     <meta name="keywords" content="games, xbox, Nintendo, jogos, video games, Playstation, PS, Atari, PS4, PS5, PS3">
     <meta name="author" content="Patricia Muraoka">
     <meta name="viewport" content="Width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script> 
+
+    <script>
+        $(document).ready(function (){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            })
+        })
+    </script>
+
 
 </head>
 
@@ -40,17 +50,46 @@
         <a href="contato.html">CONTATO</a>
     </div>     
 
+  <div id="flip"> Clique Aqui </div>
+ 
+  <div id="panel">Seja Bem-vindo Gamer!
+      <img src="Img/robo.png" style="width:10%">
+  </div>  
 
-  <div class="img_banner">
-        <figure class="img">
-            <img src="img/banner.png"> 
-        </figure>
+ <div class="slideshow-container">
+     <div class="mySlides fade">
+         <div class="numbertext">1 / 3> </div>
+         <img src="img/banner1.png" style="width:100%"> 
+     </div>
+
+     <div class="mySlides fade">
+        <div class="numbertext">1 / 3> </div>
+        <img src="img/banner2.png" style="width:100%"> 
     </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3> </div>
+        <img src="img/banner3.png" style="width:100%"> 
+    </div>
+
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ </div>
+
+  <div style="text-align: center">
+   <br>
+   <span class="dot" onclick="currentSlide(1)"></span>
+   <span class="dot" onclick="currentSlide(2)"></span>
+   <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  
+ <br>
    
 
-    <h2>DESTAQUE</h2>
-
     <div class="imagens">
+        <h2>DESTAQUE</h2>
         <figure>
             <img class="figuras" src="img/destaque.png">
         </figure>
@@ -58,17 +97,19 @@
     </div>
 
     
-    <h2>NOVIDADES</h2>
+    <br>
 
     <div class="imagens">
+        <h2>NOVIDADES</h2>
         <figure>
             <img class="figuras" src="img/novidades.png">
         </figure>
     </div>    
 
-    <h2>GALERIA</h2>
+  <br>    
 
     <div class="imagens">
+        <h2>GALERIA</h2>
         <figure>
             <img class="figuras" src="img/galeria.png">
         </figure>
@@ -78,6 +119,7 @@
 </body>
 
 <script type="text/javascript" src="js/scripts.js"></script> 
+
 
 
 <footer>
